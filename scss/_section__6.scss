@@ -1,0 +1,112 @@
+// *************************** Section 6 Styles ***************************
+
+.section__6 {
+    margin-bottom: 6em;
+
+    .videos-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4em;
+  
+      .videos {
+        flex: 0 0 auto;
+      }
+  
+      .video-1 {
+        width: 55.5vw;
+      }
+  
+      .video-2 {
+        width: 27vw;
+      }
+  
+      .video-1 .video-background,
+      .video-2 .video-background {
+        height: 27vw;
+      }
+  
+      .video-3,
+      .video-4,
+      .video-5 {
+        // width: 28vw;
+
+        & .video-background {
+          height: 16vw;
+          width: 27vw;
+        }
+      }
+    }
+  
+    .section__subtitle {
+      font-size: 2.4rem;
+      text-align: right;
+      padding-top: 0.3em;
+
+  
+      font-weight: 400;
+      color: #111;
+    }
+  
+    .video-background {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+  
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  
+      &:hover img {
+        width: 110%;
+        height: 110%;
+      }
+  
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+      }
+  
+      &::before {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .2);
+        transition: .5s all ease;
+      }
+  
+      &::after {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 8rem;
+        height: 8rem;
+        transform: translate(-50%, -50%);
+        background: url(../images/icon_play.png) center no-repeat;
+        background-size: cover;
+        transition: .5s all ease;
+      }
+  
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        transition: all .3s;
+        z-index: -1;
+        vertical-align: middle;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+    }
+  }
+  
+  // *************************** End of Section 6 Styles ***************************

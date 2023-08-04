@@ -1,0 +1,167 @@
+// *************************** Global Styles ***************************
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Iran Sans";
+    overflow-x: hidden;
+    text-align: right;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $title__font;
+}
+
+ul {
+    padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 84vw;
+}
+
+.section__title,
+.section__desc {
+    font-family: $title__font;
+    font-weight: 400;
+    line-height: 6.4rem;
+}
+
+.section__title {
+    font-size: 4.8rem;
+    padding-top: 1.8em;
+}
+
+.section__desc {
+    font-size: 2.5vw;
+}
+
+.section__subtitle {
+    font-size: 2.4rem;
+    padding: 1em 0;
+    line-height: 4rem;
+}
+
+.btn {
+    font-size: 1.6rem;
+}
+
+.btn__animated {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all .3s;
+        border-radius: 0;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    & span {
+        transition: all .3s;
+        position: relative;
+    }
+
+    &--light {
+        color: $color--lightest;
+
+        &:hover {
+            color: $color--darkest;
+        }
+
+        &::before {
+            background-color: $color--lightest;
+        }
+
+        & span {
+            color: $color--lightest;
+        }
+
+        &:hover span {
+            color: $color--darkest;
+        }
+    }
+
+    &--dark {
+        color: $color--dark;
+        border: 1px solid $color--dark;
+
+        &::before {
+            background-color: $color--dark;
+        }
+
+        & span {
+            color: $color--dark;
+        }
+
+        &:hover span {
+            color: $color--lightest;
+        }
+    }
+}
+
+.product__arrow {
+    display: inline-block;
+    background-image: url(../images/arrow.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 0.8rem;
+    height: 1.2rem;
+    margin-right: 0.8rem;
+}
+
+.btn-goToUp {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 900;
+
+    scroll-behavior: smooth;
+}
+
+.getTop {
+    display: block;
+    cursor: pointer;
+    background: url(../images/getTop-39af3f63e1.png) center/contain no-repeat;
+    width: 68px;
+    height: 68px;
+    opacity: 0;
+    text-align: center;
+    left: 337.5px;
+
+    transition: all 0.5s;
+}
+
+.getTop img {
+    z-index: 9999;
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 21px;
+}
+
+// *************************** End of Global Styles ***************************

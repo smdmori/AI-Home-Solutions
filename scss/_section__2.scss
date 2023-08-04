@@ -1,0 +1,59 @@
+// *************************** Section 2 Styles ***************************
+
+.section__2 {
+  .btn-learn-more {
+    background-color: transparent;
+    height: 4.4rem;
+    line-height: .4rem;
+    padding: 2rem 4.4rem;
+    margin-bottom: 3.5em;
+
+    & span {
+      z-index: 1;
+      font-size: 1.8rem;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .verticalSwiper {
+    width: 100%;
+  }
+
+  .section-2-swiper {
+    margin: 0 auto;
+    height: 44vw;
+  }
+}
+
+// *************************** End of Section 2 Styles ***************************

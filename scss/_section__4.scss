@@ -1,0 +1,172 @@
+// *************************** Section 4 Styles ***************************
+
+.section__4 {
+    margin-top: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+  
+      &-container {
+        position: relative;
+        height: 63vw;
+        width: 84vw;
+      }
+  
+      &:hover {
+  
+        .overlay,
+        .product__title,
+        .product__cta {
+          opacity: 1;
+        }
+  
+        .product__cta::before {
+          width: 7.5vw;
+        }
+      }
+    }
+  
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      opacity: 0;
+      transition: all .3s;
+    }
+  
+    .product__title {
+      font-size: 1.3vw;
+      font-weight: 800;
+      color: #fff;
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+    }
+  
+    .product__cta {
+      font-size: 1.2vw;
+      color: #fff;
+      opacity: 0;
+      display: inline-block;
+      position: relative;
+      margin-top: 2rem;
+  
+      &::before {
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        display: block;
+        height: 2px;
+        width: 0;
+        background: #fff;
+        transition: all .3s;
+        content: '';
+      }
+    }
+  
+    .product__1 {
+      top: 0;
+      left: 0;
+      background-image: url(../images/sec4_camera.jpg);
+    }
+  
+    .product__2 {
+      top: 21vw;
+      left: 0;
+      background-image: url(../images/sec4_bluetooth-decor-speaker.png);
+    }
+  
+    .product__3 {
+      display: block;
+      top: 0;
+      left: 21vw;
+      background-image: url(../images/sec4_gateway-panel.jpg);
+  
+      .section__desc {
+        color: #000;
+        margin-top: 4rem;
+      }
+
+      .product__cta__container {
+        background-color: #cacaca;
+        padding: 1em 3em;
+        border-radius: 100vw;
+        width: fit-content;
+        margin: 0 auto;
+      }
+  
+      .product__cta {
+        color: #000;
+        opacity: 1;
+        margin-top: 0;
+  
+        &::before {
+          background: #000;
+        }
+      }
+  
+      .product__arrow {
+        background-image: url(../images/arrow_black.png);
+      }
+    }
+  
+    .product__4 {
+      top: 0;
+      right: 0;
+      background-image: url(../images/sec4_smart-curtain.jpg);
+    }
+  
+    .product__5 {
+      top: 42vw;
+      left: 0;
+      background-image: url(../images/sec4_magic-cube.jpg);
+    }
+  
+    .product__6 {
+      top: 42vw;
+      left: 42vw;
+      background-image: url(../images/sec4_smart-lighting.png);
+    }
+  
+    .product__7 {
+      top: 42vw;
+      right: 0;
+      background-image: url(../images/sec4_smart-door-lock.jpg);
+    }
+
+    .product {
+      &__1, &__2, &__4, &__6, &__7 {
+        width: 21vw;
+      }
+      &__1, &__2, &__5, &__6, &__7 {
+        height: 21vw;
+      }
+
+      &__3 {
+        width: 42vw;
+        height: 42vw;
+      }
+
+      &__4 {
+        height: 42vw;
+      }
+
+      &__5 {
+        width: 42vw;
+      }
+    }
+  }
+  
+  // *************************** End of Section 4 Styles ***************************

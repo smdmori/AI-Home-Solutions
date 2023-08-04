@@ -1,0 +1,87 @@
+// Bootstrap Styles
+// navbar: 18
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+// navbar: 61
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+// navbar: 99
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+// navbar: 145
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+}
+
+// navbar: 158
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+// navbar; 165
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+}
+
+// navbar: 177
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+// nav: 14
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+// End of Bootstrap Styles
+
+// Custom Styles
+// navbar: 5
+.navbar .nav-item {
+    // padding-inline: 2vw;
+}
+
+// navbar: 11
+.navbar .nav-item a {
+    color: #a7a7a7 !important;
+}
+// End of Custom Styles
+

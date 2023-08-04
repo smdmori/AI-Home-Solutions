@@ -1,0 +1,7 @@
+// override bootstrap
+$theme-colors: (
+    "dark": #000,
+);
+
+// import bootstrap
+@import "../bootstrap/scss/bootstrap";

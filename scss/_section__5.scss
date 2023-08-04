@@ -1,0 +1,78 @@
+// *************************** Section 5 Styles ***************************
+.section__5 {
+    margin-top: 12rem;
+  
+    .cards__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .cards__title {
+      font-size: 2vw;
+      font-weight: 600;
+      color: #fff;
+  
+      // &:hover {
+      //    text-decoration: none;
+      // }
+    }
+  
+    .cards__subtitle {
+      font-size: 2rem;
+      color: #fff;
+      opacity: 1;
+      display: inline-block;
+      position: relative;
+      margin-top: 2rem;
+  
+      &::before {
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        display: block;
+        height: 2px;
+        width: 0;
+        background: #fff;
+        transition: all .3s;
+        content: '';
+      }
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      &:hover {
+        .cards__subtitle {
+          opacity: 1;
+        }
+  
+        .cards__subtitle::before {
+          width: 12rem;
+        }
+      }
+    }
+
+    .card__1, .card__2 , .card__3 {
+      width: 27vw;
+      height: 17vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .card__1 {
+      background-image: url(../images/sec5_smart-home.png);
+    }
+  
+    .card__2 {
+      background-image: url(../images/sec5_woman.png);
+    }
+  
+    .card__3 {
+      background-image: url(../images/sec5-furniture.png);
+    }
+  }
+  
+  // *************************** End of Section 5 Styles ***************************

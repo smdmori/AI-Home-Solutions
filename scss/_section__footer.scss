@@ -1,0 +1,213 @@
+// *************************** Section Footer Styles ***************************
+
+.section__footer {
+    color: #fff;
+    width: 100vw;
+    background-color: #000;
+    padding: 49px 0 0;
+    font-size: 1.4rem;
+
+    &__content {
+        padding: 0 16vw;
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin-bottom: 38px;
+        }
+
+        &__middle {
+            position: relative;
+            padding-bottom: 21px;
+            border-bottom: 1px solid rgba(255, 255, 255, .16);
+    
+            .contact-us {
+                font-size: 1.6rem;
+            }
+    
+            .contact-us-service {
+                padding-top: 0.6em;
+                text-align: center;
+                display: block;
+                font-size: 14px;
+                width: 156px;
+                height: 40px;
+                background: 0 0;
+                border: 1px solid rgba(255, 255, 255, .6);
+                border-radius: 2px;
+                position: relative;
+    
+                span {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+    
+                .contact-us-img {
+                    z-index: 1;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    width: 19px;
+                    height: 16px;
+                    background: url(../images/online_service-c8e92ccade.png) center no-repeat;
+                    background-size: cover;
+                    display: inline-block;
+                }
+    
+                &:hover {
+                    span {
+                        color: #000;
+                    }
+    
+                    .contact-us-img {
+                        background: url(../images/online_service_active-4780add6bf.png) center no-repeat;
+                    }
+    
+                }
+            }
+    
+            .languages-container {
+                position: absolute;
+                left: 0;
+                bottom: 21px;
+                display: flex;
+                align-items: center;
+    
+                .languages {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 10rem;
+                }
+    
+                a:nth-child(1),
+                a:nth-child(2) {
+                    color: rgba(255, 255, 255, .6)
+                }
+    
+    
+                a:nth-child(1):hover,
+                a:nth-child(2):hover {
+                    color: #fff;
+                }
+            }
+        }
+    
+        &__copyright,
+        &__copyright a {
+            text-align: center;
+            color: rgba(255, 255, 255, .6);
+            margin-top: 1.5em;
+        }
+        
+        &__copyright {
+            padding-bottom: 3em;
+        }
+
+        &__copyright a:hover {
+            color: $color--lightest;
+        }
+    }    
+
+    .link-list {
+        ul li {
+            list-style-type: none;
+            margin-top: 0.8em;
+        }
+
+        .first-li {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5em;
+        }
+
+
+        .follow-us,
+        .message-us {
+            li a {
+                color: rgba(255, 255, 255, 0.6);
+
+                &::after {
+                    content: '';
+                    background: url(../images/new/link_icon-43238beda6.png) no-repeat;
+
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: sub;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .follow-us {
+            li:nth-child(2) a:after {
+                background-position: -80px 0
+            }
+
+            li:nth-child(2):hover a:after {
+                background-position: -64px 0;
+            }
+
+            li:nth-child(3) a:after {
+                background-position: -148px 0
+            }
+
+            li:nth-child(3):hover a:after {
+                background-position: -129px 0;
+            }
+
+            li:nth-child(4) a:after {
+                background-position: -48px 0
+            }
+
+            li:nth-child(4):hover a:after {
+                background-position: -32px 0;
+            }
+
+            li:nth-child(5) a:after {
+                background-position: -112px 0
+            }
+
+            li:nth-child(5):hover a:after {
+                background-position: -96px 0;
+            }
+
+            li:nth-child(6) a:after {
+                background-position: -16px 0
+            }
+
+            li:nth-child(6):hover a:after {
+                background-position: 0px 0;
+            }
+        }
+
+        .message-us {
+            li:nth-child(2) a:after {
+                background-position: -180px 0;
+            }
+
+            li:nth-child(2):hover a:after {
+                background-position: -164px 0;
+            }
+        }
+    }
+
+    .link-list>ul>li {
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, .6);
+    }
+
+    .link-list>ul>li>a {
+        font-size: 14px;
+        color: rgba(255, 255, 255, .6);
+        font-weight: 500;
+    }
+
+    .link-list>ul>li>a:hover {
+        color: #fff;
+    }
+}
+
+// *************************** End of Section Footer Styles ***************************
