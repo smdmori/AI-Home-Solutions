@@ -1,13 +1,6 @@
-https://www.orvibo.com/en/index.html
+Clone from [Orvibo](https://www.orvibo.com/en/index.html) Website
 
-TODO:
-<!-- add persian fonts -->
-<!-- fix navigation links hover area -->
-fix navigation submenu items
-<!-- fix navigation overflow on mobile  -->
-<!-- fix navigation sandwitch btn animation on mobile -->
-
-<!-- refactor responsive mode media query to LG -->
-
-<!-- RTL it -->
-
+Technologies I used in this project:
+- **Bootstrap** for making the design
+- **SwapperJS** for building carousels
+- **SASS** for making changes to css
